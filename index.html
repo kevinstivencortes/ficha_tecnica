@@ -16,28 +16,40 @@
     <table border="1" style="width: 50%;">
         <tr>
             <th colspan="2">ficha tecnica de kevin stiven</th>
-            <th colspan="2"><img src="img/Html5-JS-css-logo.png"></th>
+            <th colspan="3"><img src="img/Html5-JS-css-logo.png"></th>
         </tr>
         <tr>
             <th>caracteristicas:</th>
-            <td>nombre del producto:</td>
-            <td>linea del producto:</td>
-            <td colspan="2">modulo:</td>
+            <td>nombre del producto <input type="text" id="producto" placeholder="producto"></td>
+            <td>linea del producto <input type="text" id="linea" placeholder="linea del producto"></td>
+            <td colspan="3">modulo <input type="text" id="modulo" placeholder="modulo"></td>
         </tr>
-        <tr><th>descripcion del producto:</th></tr>
-        <tr><th>arquitectura:</th></tr>
+        <tr><th>descripcion del producto:</th>
+        <td colspan="4"><input type="text" id="descripcion" placeholder="descripcion"></td>
+        </tr>
+        <tr><th>arquitectura:</th>
+            <td colspan="4"><input type="text" id="arquitectura" placeholder="arquitectura"></td>
+        </tr>
+
+
         <tr>
-            <th>requerimientos del productos:</th>
-            <td>requisitos del sistema (srvicidor)</td>
-            <td>hardware:</td>
-            <td>software:</td>
-            <td>otros:</td>
+            <th rowspan="2">requerimientos del productos:</th>
+            <td>requisitos del sistema (servidor) <input type="text" id="requisitos" placeholder="requisitos del sistema"></td>
+            <td>hardware  (servidor): <input type="text" id="hardware" placeholder="hardware"></td>
+            <td>software  (servidor): <input type="text" id="software" placeholder="software"></td>
+            <td>otros  (servidor): <input type="text" id="otros" placeholder="otros:"></td>
+        </tr>
+        <tr>
+            <td>requisitos del sistema (cliente) <input type="text" id="requisitos1" placeholder="requisitos del sistema"></td>
+            <td>hardware (cliente): <input type="text" id="hardware1" placeholder="hardware"></td>
+            <td>software (cliente): <input type="text" id="software1" placeholder="software"></td>
+            <td>otros (cliente): <input type="text" id="otros1" placeholder="otros"></td>
         </tr>
         <tr>
             <th>requerimientos:</th>
-            <td>requerimientos funcionales generales</td>
-            <td>requerimientos adicionales</td>
-            <td colspan="2">clientes del productos</td>
+            <td>requerimientos funcionales generales <input type="text" id="funcionales" placeholder="funcionales generales:"></td>
+            <td>requerimientos adicionales <input type="text" id="adicionales" placeholder="adicionales:"></td>
+            <td colspan="2">clientes del productos <input type="text" id="clientes" placeholder="clientes del productos:"></td>
         </tr>
     </table>
     <br>
@@ -45,46 +57,144 @@
         <tr>
             <th>version</th>
             <th>naturaleza</th>
-            <th>fecha de aprvacion</th>
+            <th>fecha de aprovacion</th>
             <th>fecha validacion</th>
         </tr>
         <tr>
-            <td>00</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><input type="text" id="version" placeholder="version"></td>
+            <td><input type="text" id="naturaleza" placeholder="naturaleza"></td>
+            <td><input type="text" id="aprovacion" placeholder="fecha de aprovacion"></td>
+            <td><input type="text" id="validacion" placeholder="fecha validacion"></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><input type="text" id="version1" placeholder="version"></td>
+            <td><input type="text" id="naturaleza1" placeholder="naturaleza"></td>
+            <td><input type="text" id="aprovacion1" placeholder="fecha de aprovacion"></td>
+            <td><input type="text" id="validacion1" placeholder="fecha validacion"></td>
         </tr>
     </table>
     <br>
     <table>
         <tr>
-            <th>elaboro</th>
-            <th>aprobo</th>
-            <th>valido</th>
+            <th>elaboro <input type="text" id="elaboro" placeholder="elaboro"></th>
+            <th>aprobo <input type="text" id="aprobo" placeholder="aprobo"></th>
+            <th>valido <input type="text" id="valido" placeholder="valido"></th>
         </tr>
         <tr>
-            <th>firma</th>
-            <th>firma</th>
-            <th>firma</th>
+            <th>firma <input type="text" id="firma" placeholder="firma"></th>
+            <th>firma <input type="text" id="firma1" placeholder="firma1"></th>
+            <th>firma <input type="text" id="firma2" placeholder="firma2"></th>
         </tr>
         <tr>
-            <th>fecha</th>
-            <th>fecha</th>
-            <th>fecha</th>
+            <th>fecha <input type="text" id="fecha" placeholder="fecha"></th>
+            <th>fecha <input type="text" id="fecha1" placeholder="fecha1"></th>
+            <th>fecha <input type="text" id="fecha2" placeholder="fecha2"></th>
         </tr>
     </table>
     <br>
     <table>
         <tr>
-            <th>vesiones anteriores</th>
-            <th>version actual</th>
+            <th>vesiones anteriores <input type="text" id="version11" placeholder="versiones anteriores "></th>
+            <th>version actual <input type="text" id="version10" placeholder="version actual"></th>
         </tr>
     </table>
+    <h2><button id="boton" onclick="comprobar()">enviar respuesta</button></h2>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><p id="resultado1"></p></td>
+            <td><p id="resultado2"></p></td>
+            <td colspan="2"><p id="resultado3"></p></td>
+        </tr>
+        <tr>
+            <td colspan="4"><p id="resultado4"></p></td>
+        </tr>
+        <tr>
+            <td colspan="4"><p id="resultado5"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado6"></p></td>
+            <td><p id="resultado7"></p></td>
+            <td><p id="resultado8"></p></td>
+            <td><p id="resultado9"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado10"></p></td>
+            <td><p id="resultado11"></p></td>
+            <td><p id="resultado12"></p></td>
+            <td><p id="resultado13"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado14"></p></td>
+            <td><p id="resultado15"></p></td>
+            <td colspan="2"><p id="resultado16"></p></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><p id="resultado17"></p></td>
+            <td><p id="resultado18"></p></td>
+            <td><p id="resultado19"></p></td>
+            <td><p id="resultado20"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado21"></p></td>
+            <td><p id="resultado22"></p></td>
+            <td><p id="resultado23"></p></td>
+            <td><p id="resultado24"></p></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><p id="resultado25"></p></td>
+            <td><p id="resultado26"></p></td>
+            <td><p id="resultado27"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado28"></p></td>
+            <td><p id="resultado29"></p></td>
+            <td><p id="resultado30"></p></td>
+        </tr>
+        <tr>
+            <td><p id="resultado31"></p></td>
+            <td><p id="resultado32"></p></td>
+            <td><p id="resultado33"></p></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><p id="resultado34"></p></td>
+            <td><p id="resultado35"></p></td>
+        </tr>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
